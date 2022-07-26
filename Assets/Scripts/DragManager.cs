@@ -46,8 +46,4 @@ public class DragManager : MonoBehaviour
 
     }
 
-    private void OnMouseUp()
-    {
-        Debug.Log("on moush up");
-    }
 }

@@ -14,13 +14,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] Transform[] goal;
     [SerializeField] AudioSource CoinCollecting;
     int currentGoal;
-    [SerializeField] GameDataManager gameDataManager;
+ 
     private void Start()
     {
         StartingPosition = transform.position;
         IsColliding = false;
         currentGoal = 0;
-        ScoreSaver.lastCoins = 0;
+        
        
         
         
@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       Debug.Log(collision.gameObject.name);
+       
 
         if (IsColliding)
         {
@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Coin"))
         {
-            ScoreSaver.Coins++;
+          
             Destroy(collision.gameObject);
             OnCollision.Invoke();
             CoinCollecting.Play();
@@ -58,13 +58,10 @@ public class GameManager : MonoBehaviour
 
             IsColliding = true;
 
-            ScoreSaver.Score--;
-            ScoreSaver.collisionNum++;
-
+            
             OnCollision.Invoke();
 
-            gameDataManager.WriteToJson();
-            gameDataManager.ReadFromJson();
+           
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
 

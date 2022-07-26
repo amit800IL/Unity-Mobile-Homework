@@ -58,13 +58,10 @@
   <ItemGroup>
     <Compile Include="Assets\Level Assets\Level Art\Script\TopDownCharacterController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\ScoreSaver.cs" />
     <Compile Include="Assets\Scripts\EndingCollider.cs" />
     <Compile Include="Assets\Level Assets\Level Art\Script\PropsAltar.cs" />
     <Compile Include="Assets\Scripts\DragManager.cs" />
     <Compile Include="Assets\Level Assets\Level Art\Script\SpriteColorAnimation.cs" />
-    <Compile Include="Assets\Scripts\GameDataManager.cs" />
-    <Compile Include="Assets\Scripts\UIManager.cs" />
     <Compile Include="Assets\Level Assets\Level Art\Script\LayerTrigger.cs" />
     <Compile Include="Assets\Level Assets\Level Art\Script\CameraFollow.cs" />
   </ItemGroup>
