@@ -10,15 +10,10 @@ public class CollideHandler : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Star"))
         {
-           StartCoroutine(Destroy());
            Destroy(collision.gameObject);
         }
        
     }
 
-    IEnumerator Destroy()
-    {
-        yield return new WaitForSeconds(0.00000001f);
-        
-    }
+    
 }
