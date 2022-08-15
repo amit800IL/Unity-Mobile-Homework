@@ -1,6 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollideHandler : MonoBehaviour
 {
@@ -10,10 +10,19 @@ public class CollideHandler : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Star"))
         {
-           Destroy(collision.gameObject);
+
+            Destroy(collision.gameObject);
+            StartCoroutine(LoadTimer());
+
         }
-       
+
     }
 
-    
+    IEnumerator LoadTimer()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+    }
+
 }
