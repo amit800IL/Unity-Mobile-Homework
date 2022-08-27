@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Lesson 4/Angry Bird.unity
+- path: Assets/Lesson 7/Camera/Camera.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
