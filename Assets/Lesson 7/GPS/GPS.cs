@@ -41,7 +41,7 @@ public class GPS : MonoBehaviour
 
         if (Input.location.status == LocationServiceStatus.Failed)
         {
-            Gpsstatus.text = "Unable To Detrmine Device Location";
+            Gpsstatus.text = "Unable To Determine Device Location";
             yield break;
         }
 
