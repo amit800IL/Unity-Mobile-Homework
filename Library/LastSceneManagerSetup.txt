@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Lesson 7/Gyro/Roll-a-ball.unity
+- path: Assets/Lesson 4/Scene/Angry Bird.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
